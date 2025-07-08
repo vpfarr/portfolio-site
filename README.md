@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Personal portfolio website for Valentin Pfarr - Developer, DevOps Engineer & IT Specialist.
+Personal portfolio website coded with the assistance of Claude Code.
 
 ## Features
 
@@ -36,4 +36,4 @@ npm run lint
 
 ## License
 
-MIT © 2025 Valentin Pfarr
+© 2025 Valentin Pfarr
