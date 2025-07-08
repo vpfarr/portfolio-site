@@ -27,22 +27,22 @@ const Portfolio = () => {
 
   const achievements = [
     {
-      title: 'Test Automation Platform',
-      description: 'Python & JavaScript test framework with 100+ automated test cases for automotive systems',
-      impact: 'Processing 1000+ daily test runs',
-      tech: ['Python', 'JavaScript', 'pytest', 'bash', 'CI/CD']
+      title: 'Enterprise Test Automation Platform',
+      description: 'Architected comprehensive Python test framework supporting automotive systems across multiple environments',
+      impact: 'Processing 1000+ daily test executions with robust error handling and reporting',
+      tech: ['Python', 'pytest', 'JavaScript', 'bash', 'CI/CD', 'Docker']
     },
     {
-      title: 'Java GUI Testing Framework',
-      description: 'JavaFX testing solution with TestFX for warehouse management software',
-      impact: 'Automated previously manual GUI tests',
-      tech: ['Java', 'JavaFX', 'TestFX', 'JUnit', 'Maven']
+      title: 'Legacy Codebase Modernization',
+      description: 'Refactored and extended large-scale Java enterprise applications, improving maintainability and performance',
+      impact: 'Reduced technical debt and enhanced system reliability across 5 major projects',
+      tech: ['Java', 'JavaFX', 'TestFX', 'JUnit', 'Maven', 'Git']
     },
     {
-      title: 'Infrastructure Automation',
-      description: 'Ansible-based provisioning for 60+ VMs across 4 private cloud environments',
-      impact: 'Automated VM deployment & configuration',
-      tech: ['Python', 'Ansible', 'VMware vSphere', 'Linux']
+      title: 'Cloud Infrastructure Automation',
+      description: 'Designed and implemented Python-based infrastructure-as-code solutions for multi-environment deployments',
+      impact: 'Automated provisioning and configuration of 60+ VMs across 4 private cloud environments',
+      tech: ['Python', 'Ansible', 'VMware vSphere', 'Linux', 'Docker']
     }
   ];
 
@@ -115,8 +115,9 @@ const Portfolio = () => {
             Developer, DevOps Engineer & IT Specialist
           </h2>
           <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
-            I develop test frameworks, automation tools, manage enterprise infrastructure and build high performance clusters with 60+ VMs. 
-            Passionate about software engineering, CI/CD automation, and scalable system design.
+            I architect and maintain enterprise-grade Python applications, build comprehensive test frameworks, 
+            and manage scalable infrastructure across multiple environments. 
+            Passionate about clean code, robust testing, and automated deployment pipelines.
           </p>
           
           <div className="flex justify-center space-x-6 mb-12">
@@ -155,15 +156,15 @@ const Portfolio = () => {
               <div className="space-y-6">
                 <div className="border-l-4 border-purple-500 pl-4">
                   <h4 className="text-lg font-semibold text-white">2023 - Present: DevOps Engineer</h4>
-                  <p className="text-gray-400 mt-2">Developing Python automation tools and Ansible playbooks for infrastructure provisioning. Containerizing applications and building CI/CD pipelines for 60+ VMs.</p>
+                  <p className="text-gray-400 mt-2">Developing enterprise-grade Python automation tools and fullstack applications for infrastructure management. Building robust CI/CD pipelines and containerizing applications across 60+ VMs with comprehensive monitoring and deployment strategies.</p>
                 </div>
                 <div className="border-l-4 border-purple-500 pl-4">
                   <h4 className="text-lg font-semibold text-white">2022 - 2023: Software & Systems Engineer</h4>
-                  <p className="text-gray-400 mt-2">Developed comprehensive test frameworks in Python and JavaScript with 100+ automated test cases. Built Java-based testing tools with GUI automation capabilities.</p>
+                  <p className="text-gray-400 mt-2">Architected and maintained enterprise-scale test automation frameworks across 5 major projects. Developed fullstack Python applications with comprehensive test coverage, refactored legacy codebases, and built Java-based GUI testing solutions.</p>
                 </div>
                 <div className="border-l-4 border-purple-500 pl-4">
                   <h4 className="text-lg font-semibold text-white">2021 - 2022: Systems Administrator</h4>
-                  <p className="text-gray-400 mt-2">Developed web applications (homepage, intranet, SPA prototypes) while managing Hyper-V infrastructure and 200+ clients.</p>
+                  <p className="text-gray-400 mt-2">Built fullstack web applications including company intranet and single-page applications while managing enterprise Hyper-V infrastructure and 200+ client systems.</p>
                 </div>
                 <div className="border-l-4 border-purple-500 pl-4">
                   <h4 className="text-lg font-semibold text-white">2018 - 2021: Apprenticeship</h4>
@@ -174,39 +175,39 @@ const Portfolio = () => {
             
             <div className="bg-slate-900/50 p-8 rounded-lg">
               <h3 className="text-2xl font-semibold mb-6 text-purple-300">Key Achievements</h3>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Server size={20} className="text-white" />
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <p className="font-semibold">60+ VMs Managed</p>
                     <p className="text-sm text-gray-400">Across 4 private cloud environments</p>
                   </div>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Code size={20} className="text-white" />
                   </div>
-                  <div>
-                    <p className="font-semibold">100+ Test Cases</p>
-                    <p className="text-sm text-gray-400">Python, JavaScript & Java frameworks</p>
+                  <div className="flex-1">
+                    <p className="font-semibold">Enterprise Test Frameworks</p>
+                    <p className="text-sm text-gray-400">Comprehensive Python framework for automotive test automation</p>
                   </div>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Database size={20} className="text-white" />
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <p className="font-semibold">200+ Clients</p>
                     <p className="text-sm text-gray-400">Enterprise AD management</p>
                   </div>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                     <Globe size={20} className="text-white" />
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <p className="font-semibold">3+ Years Experience</p>
                     <p className="text-sm text-gray-400">DevOps & Infrastructure</p>
                   </div>
@@ -366,7 +367,7 @@ const Portfolio = () => {
           </h2>
           
           <p className="text-xl text-gray-400 mb-12">
-            Interested in collaboration? Let&apos;s discuss your next infrastructure or DevOps project!
+            Interested in collaboration? Let&apos;s discuss your next project, app or DevOps challenge!
           </p>
           
           <div className="flex justify-center space-x-8">
