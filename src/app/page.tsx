@@ -52,21 +52,21 @@ const Portfolio = () => {
       description: 'Modern, responsive portfolio built with Next.js and Tailwind CSS featuring smooth animations and mobile-first design',
       tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'React'],
       github: 'https://github.com/vpfarr',
-      live: '#'
+      live: null
     },
     {
       title: 'Home Lab Automation',
       description: 'Personal infrastructure automation scripts for home server management and monitoring',
       tech: ['Python', 'Docker', 'Bash', 'Grafana'],
       github: 'https://github.com/vpfarr',
-      live: '#'
+      live: null
     },
     {
       title: 'Development Tools',
       description: 'Collection of CLI tools and scripts for development workflow automation',
       tech: ['Python', 'Bash', 'Git', 'CLI'],
       github: 'https://github.com/vpfarr',
-      live: '#'
+      live: null
     }
   ];
 
@@ -112,7 +112,7 @@ const Portfolio = () => {
         {mobileMenuOpen && (
           <div className="md:hidden bg-slate-900/95 backdrop-blur-sm">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {['Hero', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+              {['Me', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
@@ -416,13 +416,15 @@ const Portfolio = () => {
                       <Github size={16} className="mr-2" />
                       Code
                     </a>
-                    <a
-                      href={project.live}
-                      className="flex items-center text-gray-400 hover:text-white transition-colors duration-200"
-                    >
-                      <ExternalLink size={16} className="mr-2" />
-                      Live
-                    </a>
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        className="flex items-center text-gray-400 hover:text-white transition-colors duration-200"
+                      >
+                        <ExternalLink size={16} className="mr-2" />
+                        Live
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -436,12 +438,12 @@ const Portfolio = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-8">
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Let's Connect
+              Let&apos;s Connect
             </span>
           </h2>
           
           <p className="text-xl text-gray-400 mb-12">
-            Interested in collaboration? Let's discuss your next infrastructure or DevOps project!
+            Interested in collaboration? Let&apos;s discuss your next infrastructure or DevOps project!
           </p>
           
           <div className="flex justify-center space-x-8">
@@ -450,12 +452,6 @@ const Portfolio = () => {
               className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-8 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105"
             >
               Get In Touch
-            </a>
-            <a
-              href="#"
-              className="border border-purple-600 hover:bg-purple-600 px-8 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105"
-            >
-              Download CV
             </a>
           </div>
         </div>
