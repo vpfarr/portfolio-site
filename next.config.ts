@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
     unoptimized: true
   },
   // GitHub Pages deployment
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/portfolio-site' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio-site' : '',
   // Ensure static files work properly
   distDir: 'out'
 };
