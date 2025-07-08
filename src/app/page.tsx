@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, ExternalLink, Code, Server, Database, Globe, ChevronDown, Menu, X } from 'lucide-react';
+import { Github, Linkedin, Mail, Code, Server, Database, Globe, ChevronDown, Menu, X } from 'lucide-react';
 
 const Portfolio = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -46,29 +46,6 @@ const Portfolio = () => {
     }
   ];
 
-  const personalProjects = [
-    {
-      title: 'Portfolio Website',
-      description: 'Modern, responsive portfolio built with Next.js and Tailwind CSS featuring smooth animations and mobile-first design',
-      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'React'],
-      github: 'https://github.com/vpfarr',
-      live: '#'
-    },
-    {
-      title: 'Home Lab Automation',
-      description: 'Personal infrastructure automation scripts for home server management and monitoring',
-      tech: ['Python', 'Docker', 'Bash', 'Grafana'],
-      github: 'https://github.com/vpfarr',
-      live: '#'
-    },
-    {
-      title: 'Development Tools',
-      description: 'Collection of CLI tools and scripts for development workflow automation',
-      tech: ['Python', 'Bash', 'Git', 'CLI'],
-      github: 'https://github.com/vpfarr',
-      live: '#'
-    }
-  ];
 
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
@@ -87,7 +64,7 @@ const Portfolio = () => {
             
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
-              {['Me', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+              {['Me', 'About', 'Skills', 'Contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
@@ -112,7 +89,7 @@ const Portfolio = () => {
         {mobileMenuOpen && (
           <div className="md:hidden bg-slate-900/95 backdrop-blur-sm">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {['Hero', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+              {['Me', 'About', 'Skills', 'Contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
@@ -378,70 +355,18 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Personal Projects Section */}
-      <section id="projects" className="py-20 bg-slate-800/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Personal Projects
-            </span>
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {personalProjects.map((project) => (
-              <div
-                key={project.title}
-                className="bg-slate-900/50 rounded-lg overflow-hidden hover:bg-slate-900/70 transition-all duration-300 hover:scale-105"
-              >
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-                  <p className="text-gray-400 mb-4">{project.description}</p>
-                  
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  
-                  <div className="flex space-x-4">
-                    <a
-                      href={project.github}
-                      className="flex items-center text-gray-400 hover:text-white transition-colors duration-200"
-                    >
-                      <Github size={16} className="mr-2" />
-                      Code
-                    </a>
-                    <a
-                      href={project.live}
-                      className="flex items-center text-gray-400 hover:text-white transition-colors duration-200"
-                    >
-                      <ExternalLink size={16} className="mr-2" />
-                      Live
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-slate-800/50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-8">
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Let's Connect
+              Let&apos;s Connect
             </span>
           </h2>
           
           <p className="text-xl text-gray-400 mb-12">
-            Interested in collaboration? Let's discuss your next infrastructure or DevOps project!
+            Interested in collaboration? Let&apos;s discuss your next infrastructure or DevOps project!
           </p>
           
           <div className="flex justify-center space-x-8">
@@ -450,12 +375,6 @@ const Portfolio = () => {
               className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-8 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105"
             >
               Get In Touch
-            </a>
-            <a
-              href="#"
-              className="border border-purple-600 hover:bg-purple-600 px-8 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105"
-            >
-              Download CV
             </a>
           </div>
         </div>
