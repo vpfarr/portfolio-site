@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, Code, Server, Database, Globe, ChevronDown, Menu, X } from 'lucide-react';
+import { Github, Linkedin, Code, Server, Database, Globe, ChevronDown, Menu, X } from 'lucide-react';
 
 const Portfolio = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -126,9 +126,6 @@ const Portfolio = () => {
             </a>
             <a href="https://linkedin.com/in/valentin-pfarr-115ba4223" className="p-3 bg-blue-600 hover:bg-blue-700 rounded-full transition-colors duration-200">
               <Linkedin size={24} />
-            </a>
-            <a href="mailto:vpfarr@mail.de" className="p-3 bg-green-600 hover:bg-green-700 rounded-full transition-colors duration-200">
-              <Mail size={24} />
             </a>
           </div>
 
@@ -372,7 +369,7 @@ const Portfolio = () => {
           
           <div className="flex justify-center space-x-8">
             <a
-              href="mailto:vpfarr@mail.de"
+              href="https://linkedin.com/in/valentin-pfarr-115ba4223"
               className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-8 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105"
             >
               Get In Touch
