@@ -3,15 +3,17 @@ import { Achievement } from '../types';
 export const achievements: Achievement[] = [
   {
     title: 'Enterprise Test Automation Platform',
-    description: 'Developed and maintained comprehensive Python test framework supporting automotive systems across virtual and hardware targets.',
-    impact: 'Orchestrated 1000+ daily test executions with collection of results and visualization in Django frontend.',
+    description: 'Developed and maintained comprehensive Python test framework supporting automotive systems across virtual and hardware targets. Collection and storage of traces and results in backend, visualization in frontend using Django.',
+    impact: 'Orchestrated test farm with 1000+ daily test executions.',
     tech: ['Python', 'pytest', 'JavaScript', 'Bash', 'CI/CD', 'Docker', 'Django']
   },
   {
-    title: 'Cloud Infrastructure Automation',
-    description: 'Designed and implemented an Ansible-based infrastructure-as-code solution for multi-environment deployments.',
-    impact: 'Automated provisioning and configuration of VMs (lower-triple-digit) across 4 private cloud environments',
-    tech: ['Python', 'Ansible', 'VMware vSphere', 'Linux', 'Docker']
+    title: 'Provisioning of software defined private cloud environments',
+    description: `Designed and implemented an Ansible-based infrastructure-as-code solution, working across multiple separate deployments.
+      Built unit and integration tests using Molecule.
+      Including intermediate network provisioning using vSphere, PowerDNS and iptables (NAT, routing).`,
+    impact: 'Automated provisioning and configuration of VM environments (lower-triple-digit) across 4 private cloud environments',
+    tech: ['Python', 'Ansible', 'Molecule', 'VMware vSphere', 'Linux', 'Docker']
   },
   {
     title: 'Procedural planet generator',

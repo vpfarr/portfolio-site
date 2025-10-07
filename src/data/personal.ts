@@ -4,8 +4,8 @@ export const personalInfo: PersonalInfo = {
   name: 'Valentin Pfarr',
   title: 'Developer, DevOps Engineer & IT Specialist',
   description: `I have a diverse background spanning the complete lifecycle of enterprise software systems.
-  I develop, build, test and deploy software and operate it in a variety of environments.
-  I'm passionate about system design, design patterns and clean architecture to build robust, state of the art software
+  I develop, build, test, deploy and operate software in a variety of environments.
+  I'm passionate about system design, design patterns and clean architecture to build robust state of the art software
   with a focus on reliably and swiftly delivering value to users.`,
   github: 'https://github.com/vpfarr',
   linkedin: 'https://linkedin.com/in/valentin-pfarr-115ba4223'
@@ -20,12 +20,12 @@ export const timeline: TimelineItem[] = [
   {
     period: '2022 - 2023',
     title: 'Software & Systems Engineer',
-    description: 'Architected and maintained enterprise-scale test automation frameworks across 5 major projects. Developed fullstack Python applications with comprehensive test coverage, refactored legacy codebases, and built Java-based GUI testing solutions.'
+    description: 'Architected and maintained enterprise-scale test automation framework across 5 major projects. Developed fullstack Python applications with comprehensive test coverage, refactored legacy codebases, and built Java-based GUI testing solutions.'
   },
   {
     period: '2021 - 2022',
     title: 'Systems Administrator',
-    description: 'Built fullstack web applications including company intranet and single-page applications while managing enterprise Hyper-V infrastructure and 200+ client systems.'
+    description: 'Operation and extension of enterprise multi-site Hyper-V infrastructure and 200+ client systems. Designed and built fullstack web applications: Single-page App, web-based product configurator, etc.'
   },
   {
     period: '2018 - 2021',
